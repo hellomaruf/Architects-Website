@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+}
+/* Share style */
+.title-color {
+  color: var(--Dark-01, #131313);
+}
+.p-color {
+  color: var(--Dark-03, #727272);
+}
+.primary-button {
+  padding: 20px 28px;
+  border: none;
+  border-radius: 8px;
+  background: #ff900e;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+/* nav section */
+.nav-container {
+  width: 100%;
+  background: rgba(255, 144, 14, 0.1);
+}
+.nav-container .nav-content {
+  max-width: 1340px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-container .nav-content h1 {
+  font-size: 45px;
+  font-size: 2.5rem;
+}
+.nav-container .nav-content > ul {
+  display: flex;
+  list-style: none;
+}
+.nav-container .nav-content ul li {
+  padding: 0 20px;
+}
+.nav-container .nav-content ul li a {
+  text-decoration: none;
+  color: var(--Dark-02, #424242);
+}
+
+/* Hero section */
+.hero {
+  width: 100%;
+  background: rgba(255, 144, 14, 0.1);
+}
+.hero-container {
+  max-width: 1340px;
+  margin: 0 auto;
+  text-align: center;
+}
+.hero-container .hero-content {
+  max-width: 868px;
+  margin: 0 auto;
+  padding: 116px 0 50px 0;
+}
+.hero-container .hero-content p {
+  padding: 30px 0;
+}
+.hero-container .hero-content h1 {
+  font-size: 64px;
+}
+.hero-img img {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+/* Responsive for mobile device */
+@media (max-width: 576px) {
+  .nav-container .nav-content {
+    flex-direction: column;
+  }
+  .hero-container .hero-content h1 {
+    font-size: 48px;
+  }
+  .nav-container .nav-content h1 {
+    font-size: 2rem;
+    padding-top: 20px;
+  }
+  .hero-container .hero-content {
+    padding: 80px 30px 50px 30px;
+  }
+  .hero-img img {
+    padding: 20px 30px;
+  }
+  .primary-button {
+    padding: 15px 25px;
+    font-size: 16px;
+  }
+}
+
+/* Responsive for Medium devices */
+@media (min-width: 576px) and (max-width: 768px) {
+  .nav-container .nav-content {
+    flex-direction: column;
+  }
+  .hero-container .hero-content {
+    padding: 80px 30px 50px 30px;
+  }
+  .hero-img img {
+    padding: 20px 30px;
+  }
+
+  .primary-button {
+    padding: 15px 25px;
+    font-size: 16px;
+  }
+}
