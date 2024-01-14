@@ -123,6 +123,7 @@ body {
 }
 .love-enjoy-container .love-enjoy-content {
   display: flex;
+  align-items: center;
 }
 .header-content h1 {
   font-size: 45px;
@@ -146,6 +147,12 @@ body {
   padding-bottom: 10px;
   font-size: 20px;
   font-weight: 600;
+}
+.love-enjoy-img {
+  width: 80%;
+}
+.love-enjoy-img img {
+  width: 100%;
 }
 .exprience {
   width: 342px;
@@ -202,6 +209,20 @@ body {
   .features-text-content h1 {
     font-size: 40px;
   }
+
+  /* love and enjoy section */
+  .love-enjoy-container .love-enjoy-content {
+    flex-direction: column;
+  }
+  .love-enjoy-img {
+    padding: 20px;
+  }
+  .exprience h1 {
+    font-size: 55px;
+  }
+  .text-content {
+    padding: 0 30px;
+  }
 }
 
 /* Responsive for Medium devices */
@@ -229,6 +250,12 @@ body {
     text-align: center;
     padding: 30px;
   }
+}
+
+/* love and enjoy section */
+.text-content .cards .card {
+    width: 586px;
+    margin: 20px;
 }
 
 /* Responsive for large devices */
